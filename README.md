@@ -73,7 +73,7 @@ Keep those available under `scripts\CloneTools\` when deploying the styled tools
 ## iClone
 
 - `CloneFBX.py` - Lightweight iClone avatar FBX exporter with presets and root-bone merging.
-- `MaxSYNC/` (`MaxSYNC.py`, `MaxSyncListener.ms`, `MaxSyncListenerPy.py`, `MaxSyncMacros.ms`) - Bidirectional iClone ↔ 3ds Max live link for avatar animation and prop transfer.
+- `MaxSYNC/` (`MaxSYNC.py`, `MaxSyncListener.ms`, `MaxSyncListenerPy.py`, `MaxSyncMacros.ms`) - Bidirectional iClone ↔ 3ds Max live link for avatar animation and prop transfer. (probably broken)
 
 ## ImageMagick
 
