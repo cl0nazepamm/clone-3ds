@@ -1,8 +1,6 @@
-# CloneTools for 3ds Max
-
+# personal scripts and tools
+these r my personal scripts I've made or collected over some time
 ![Clone Logo](images/Logo.png)
-
-Small 3ds Max scripts and macros for material work, rigging fixes, viewport utilities, and day-to-day scene cleanup.
 
 ## Install
 
@@ -44,18 +42,44 @@ Keep those available under `scripts\CloneTools\` when deploying the styled tools
 - `autoLogo.ms` - Batch processes SVG logo assets into 3D geometry.
 - `Collapse.ms` - Collapses modifier stacks while preserving selected modifiers.
 - `CopyUV0toUV1.ms` / `CopyUVChannels.ms` - Copies UV data between channels.
+- `CloneTools-DecimateVertChain.ms` / `CloneTools-EqualizeVertChain.ms` - Decimates or evenly spaces vertices along a selected Editable Poly chain.
+- `CloneTools-GroupsToDummies.mcr` - Converts selected groups into dummy hierarchies.
+- `CloneTools-ImportObsidianCanvasImages.mcr` - Imports images from an Obsidian `.canvas` file as reference planes.
 - `CloneTools-InstanceFromFirstKeepMaterials.mcr` - Replaces selected objects with instances of the first selected source while preserving each target material.
+- `CloneTools-MakeEdgeHard.mcr` / `CloneTools-MakeEdgeSmooth.mcr` - Marks selected poly edges hard or smooth.
+- `CloneTools-PasteClipboardImagePlane.mcr` - Pastes a clipboard image or file path as a viewport-aligned unlit reference plane.
+- `CloneTools-QuickConnectNodes.mcr` / `connector.ms` / `connector_rules.ms` - Auto-connects selected Slate Material Editor texture maps to material slots by naming rules.
+- `CloneTools-ReadOptimizeData.mcr` - Applies a default Optimize modifier preset to selected objects.
+- `CloneTools-RotationAxisSnap.mcr` - Blender-style viewport rotation axis snapping (with Grid-aligned view support).
 - `CloneTools-SendBitmapToVCanvas.mcr` - Sends a bitmap to Viewport Canvas.
-- `CloneTools-RotationAxisSnap.mcr` - Blender-style viewport rotation axis snapping.
+- `CloneTools-SplineArc.ms` / `CloneTools-SplineDivide.ms` - Bulges a 2-knot spline segment into a G1 arc or bakes interpolation steps into real knots.
 - `CloneTools-SwapViewports.mcr` - Swaps left and right viewport layouts.
+- `CloneTools-TogglePerspIsoView.mcr` - Toggles between Perspective and Orthographic/Iso user view.
+- `CloneTools-ToggleWireColorBlackRandom.mcr` - Toggles selected objects' wireframe colors between black and random.
+- `CloneTools-ViewportPresetClone.mcr` / `CloneTools-ViewportPresetCloneWhite.mcr` - Applies custom Nitrous viewport visual presets.
 - `ViewportOpacitySlider.ms` / `CloneTools-ViewportOpacitySlider.mcr` - Click-drag viewport opacity control.
 - `ViewportTimeSlider.ms` / `CloneTools-ViewportTimeSlider.mcr` - Click-drag timeline scrubbing from the viewport.
 - `ToggleTrackView.ms` - Toggles Track View modes.
 
 ## SME
 
-- `OSL_SME_DropHandler.ms` - Changes Slate drag/drop texture behavior to OSL Bitmap.
+- `OSL_SME_DropHandler.ms` - Changes Slate drag/drop texture behavior to OSL Bitmap (by Changsoo Eun).
 - `SME_RandomizeBitmapNames.ms` - Adds random seed values to bitmap node names.
+
+## MaxToBodypaint
+
+- `MaxToBodypaint.ms` / `MaxToBodypaint.pyp` - One-click bridge sending selected 3ds Max meshes (evaluated with UVs and material maps) straight into Cinema 4D / BodyPaint. See [MaxToBodypaint/README.md](MaxToBodypaint/README.md).
+
+## iClone
+
+- `CloneFBX.py` - Lightweight iClone avatar FBX exporter with presets and root-bone merging.
+- `MaxSYNC/` (`MaxSYNC.py`, `MaxSyncListener.ms`, `MaxSyncListenerPy.py`, `MaxSyncMacros.ms`) - Bidirectional iClone ↔ 3ds Max live link for avatar animation and prop transfer.
+
+## ImageMagick
+
+- `ConvertToJPEG.bat`, `EXR_to_HDR.bat`, `EXR_to_RGBM.bat`, `CombineMapsAdditive.bat` - Drag-and-drop image conversion and mask utilities.
+- `Cubemap_Maker/` - Generates horizontal-cross cubemaps from face images.
+- `ImageQuickResize/` - Batch resizes texture bakes. See [ImageMagick/README.md](ImageMagick/README.md).
 
 ## Requirements
 
